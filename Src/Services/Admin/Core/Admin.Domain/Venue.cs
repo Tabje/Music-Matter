@@ -4,9 +4,9 @@ namespace Admin.Domain
 {
     public class Venue : EntityBase
     {
-        public string Name { get; protected set; }
-        public string Description { get; protected set; }        
-        public Address Address { get; set; }
+        public string Name { get; protected set; } = string.Empty;
+        public string Description { get; protected set; } = string.Empty;
+        public Address? Address { get; set; }
 
         public void SetBasicInfo(string name, string description)
         {
