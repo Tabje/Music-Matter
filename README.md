@@ -36,3 +36,4 @@ A collection of applications to give users a possibilty to listen to livesets.
 - Venue
 - Category
 - Tag
+- Address

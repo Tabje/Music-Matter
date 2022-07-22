@@ -31,7 +31,7 @@ namespace Admin.Domain.Tests
         }
 
         [Theory]
-        [MemberData(nameof(AddressData), parameters: 7)]
+        [MemberData(nameof(AddressData))]
         public void Venue_Address(Address address)
         {
             //Arrange            
@@ -50,6 +50,5 @@ namespace Admin.Domain.Tests
                 { new Address() },
                 { null }
         };
-
     }
 }
