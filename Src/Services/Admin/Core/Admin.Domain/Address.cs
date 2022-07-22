@@ -4,13 +4,13 @@ namespace Admin.Domain
 {
     public class Address : EntityBase
     {
-        public string Street { get; set; } = string.Empty;
-        public string HouseNumber { get; set; } = string.Empty;
-        public string HouseNumberAddition { get; set; } = string.Empty;
-        public string City { get; set; } = string.Empty;
-        public string PostalCode { get; set; } = string.Empty;
-        public string CountryName { get; set; } = string.Empty;
-        public string CountryCode { get; set; } = string.Empty;
+        public string Street { get; protected set; } = string.Empty;
+        public string HouseNumber { get; protected set; } = string.Empty;
+        public string HouseNumberAddition { get; protected set; } = string.Empty;
+        public string City { get; protected set; } = string.Empty;
+        public string PostalCode { get; protected set; } = string.Empty;
+        public string CountryName { get; protected set; } = string.Empty;
+        public string CountryCode { get; protected set; } = string.Empty;
 
         public string FullStreet =>
             $"{Street} {HouseNumber}{(!string.IsNullOrWhiteSpace(HouseNumberAddition) ? $"-{HouseNumberAddition}" : string.Empty)}".Trim();

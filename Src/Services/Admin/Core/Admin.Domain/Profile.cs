@@ -4,10 +4,10 @@ namespace Admin.Domain
 {
     public class Profile : EntityBase
     {
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
+        public string Name { get; protected set; } = string.Empty;
+        public string Description { get; protected set; } = string.Empty;
         public DateTime? BirthDate { get; set; }
-        public string ImageUrl { get; set; } = string.Empty;
+        public string ImageUrl { get; protected set; } = string.Empty;
 
         public void SetInformation(string name, string description)
         {
